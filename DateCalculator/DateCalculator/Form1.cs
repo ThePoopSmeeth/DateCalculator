@@ -31,8 +31,6 @@ namespace DateCalculator
 
         private double Calculate_Difference(DateTime Start, DateTime End)
         {
-            //TimeSpan span = end - start;
-            //double totalMinutes = span.TotalMinutes;
             var Span = End - Start;
             double differenceInMinutes = Span.TotalMinutes;
             return differenceInMinutes;
