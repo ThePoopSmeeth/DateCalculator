@@ -1,0 +1,10 @@
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\bin\Debug\DateCalculator.exe.config
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\bin\Debug\DateCalculator.exe
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\bin\Debug\DateCalculator.pdb
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.csprojAssemblyReference.cache
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.frmMain.resources
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.Properties.Resources.resources
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.csproj.GenerateResource.cache
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.csproj.CoreCompileInputs.cache
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.exe
+D:\Projects\DateCalculator\DateCalculator\DateCalculator\obj\Debug\DateCalculator.pdb

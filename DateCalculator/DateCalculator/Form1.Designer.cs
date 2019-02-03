@@ -1,6 +1,6 @@
 ﻿namespace DateCalculator
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,75 +28,93 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+            this.pkrStart = new System.Windows.Forms.DateTimePicker();
+            this.pkrEnd = new System.Windows.Forms.DateTimePicker();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.txtTotalMinutes = new System.Windows.Forms.TextBox();
+            this.lblStart = new System.Windows.Forms.Label();
+            this.lblEndTime = new System.Windows.Forms.Label();
+            this.lblTotalMinutes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // dateTimePicker1
+            // pkrStart
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(169, 48);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 0;
+            this.pkrStart.Location = new System.Drawing.Point(169, 41);
+            this.pkrStart.Name = "pkrStart";
+            this.pkrStart.Size = new System.Drawing.Size(247, 20);
+            this.pkrStart.TabIndex = 0;
             // 
-            // dateTimePicker2
+            // pkrEnd
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(169, 122);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 1;
+            this.pkrEnd.Location = new System.Drawing.Point(169, 96);
+            this.pkrEnd.Name = "pkrEnd";
+            this.pkrEnd.Size = new System.Drawing.Size(247, 20);
+            this.pkrEnd.TabIndex = 1;
             // 
-            // button1
+            // btnCalculate
             // 
-            this.button1.Location = new System.Drawing.Point(182, 333);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalculate.Location = new System.Drawing.Point(169, 203);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(75, 23);
+            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // textBox1
+            // txtTotalMinutes
             // 
-            this.textBox1.Location = new System.Drawing.Point(356, 213);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtTotalMinutes.Location = new System.Drawing.Point(236, 150);
+            this.txtTotalMinutes.Name = "txtTotalMinutes";
+            this.txtTotalMinutes.Size = new System.Drawing.Size(146, 20);
+            this.txtTotalMinutes.TabIndex = 3;
             // 
-            // label1
+            // lblStart
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(81, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.lblStart.AutoSize = true;
+            this.lblStart.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStart.Location = new System.Drawing.Point(12, 41);
+            this.lblStart.Name = "lblStart";
+            this.lblStart.Size = new System.Drawing.Size(150, 29);
+            this.lblStart.TabIndex = 4;
+            this.lblStart.Text = "Start Date and Time";
             // 
-            // label2
+            // lblEndTime
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(84, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
+            this.lblEndTime.AutoSize = true;
+            this.lblEndTime.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndTime.Location = new System.Drawing.Point(12, 96);
+            this.lblEndTime.Name = "lblEndTime";
+            this.lblEndTime.Size = new System.Drawing.Size(143, 29);
+            this.lblEndTime.TabIndex = 5;
+            this.lblEndTime.Text = "End Date and Time";
             // 
-            // Form1
+            // lblTotalMinutes
+            // 
+            this.lblTotalMinutes.AutoSize = true;
+            this.lblTotalMinutes.Font = new System.Drawing.Font("Myanmar Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMinutes.Location = new System.Drawing.Point(77, 147);
+            this.lblTotalMinutes.Name = "lblTotalMinutes";
+            this.lblTotalMinutes.Size = new System.Drawing.Size(118, 29);
+            this.lblTotalMinutes.TabIndex = 6;
+            this.lblTotalMinutes.Text = "Total Minutes";
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(465, 268);
+            this.Controls.Add(this.lblTotalMinutes);
+            this.Controls.Add(this.lblEndTime);
+            this.Controls.Add(this.lblStart);
+            this.Controls.Add(this.txtTotalMinutes);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.pkrEnd);
+            this.Controls.Add(this.pkrStart);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "frmMain";
+            this.Text = "TTR/SLA Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,12 +122,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker pkrStart;
+        private System.Windows.Forms.DateTimePicker pkrEnd;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.TextBox txtTotalMinutes;
+        private System.Windows.Forms.Label lblStart;
+        private System.Windows.Forms.Label lblEndTime;
+        private System.Windows.Forms.Label lblTotalMinutes;
     }
 }
 
